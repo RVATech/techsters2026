@@ -1,21 +1,24 @@
 {
-  "name": "game-studio-starter",
+  "name": "unicorn-tetris",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.1.0",
   "type": "module",
-  "description": "A starter project for designing and building your own browser game.",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "art": "node scripts/get-art.mjs",
-    "icons": "node scripts/get-icons.mjs"
-  },
-  "devDependencies": {
-    "vite": "^5.4.10"
+    "typecheck": "tsc -b --noEmit"
   },
   "dependencies": {
-    "@iconify-json/game-icons": "^1.2.4",
-    "@iconify-json/lucide": "^1.2.120"
+    "@supabase/supabase-js": "^2.45.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2"
   }
 }
