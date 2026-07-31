@@ -87,7 +87,7 @@ export const SOUNDS = {
   select: '/assets/art/interface-sounds/Audio/select_001.ogg',
   error: '/assets/art/interface-sounds/Audio/error_001.ogg',
   back: '/assets/art/interface-sounds/Audio/back_001.ogg',
-  drop: '/assets/art/interface-sounds/Audio/drop_001.ogg',
+  drop: '/assets/art/interface-sounds/Audio/drop_002.ogg',
 };
 
 /**
