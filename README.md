@@ -21,7 +21,7 @@ The assistant's behaviour is set by two things:
 | --- | --- |
 | `context.md` | The ground rules — tone, encouragement, the no-technical-words rule, how to open the conversation, and what to keep notes on. Read first, outranks everything. |
 | `.bolt/prompt` | Always-on summary of those rules. |
-| `.bolt/skills/*.md` | Six specialists, loaded when relevant. |
+| `.bolt/skills/<name>/SKILL.md` | Six specialists, loaded when relevant. |
 
 ### The six skills
 
@@ -81,7 +81,7 @@ Plain JavaScript, no framework. Vite for the dev server and build.
 context.md            the rules — read this to understand the whole template
 .bolt/
   prompt              always-on instructions
-  skills/             the six specialists
+  skills/             one folder per specialist, each holding a SKILL.md
 docs/ART-AND-SOUND.md every art pack, icon, and sound available
 src/
   engine/             input, scenes, drawing, sound, particles, sprites, saving
