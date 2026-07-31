@@ -1,0 +1,6 @@
+# Files the assistant doesn't need to read.
+node_modules
+dist
+package-lock.json
+public/assets/art
+public/assets/icons
