@@ -1,34 +1,25 @@
 /**
  * config.js — the dials for the game.
  *
- * These are the numbers most worth changing while playtesting: how fast
- * things move, how long a round lasts, how many points things are worth.
- * Keeping them together makes it easy to try "what if the player were
- * faster?" without hunting through the whole game.
+ * This is where the numbers worth changing during playtesting live: how fast
+ * things move, how long a round lasts, how much things are worth, how many
+ * lives you get.
+ *
+ * Keeping them together means "make her faster" is a one-number change
+ * instead of a hunt through the whole game.
+ *
+ * It starts almost empty on purpose. Add settings as the game decides what it
+ * needs — there is no assumption here about what kind of game this will be.
  */
 
 export const config = {
-  // The game is drawn as if the screen were this many pixels, then scaled
-  // to fit the player's actual screen.
+  // The game is drawn as if the screen were this many pixels, then scaled to
+  // fit the player's actual screen. 960x540 is a good widescreen default,
+  // but any size works — try 540x960 for a game meant to be held upright.
   width: 960,
   height: 540,
 
-  title: 'My Game',
-  tagline: 'A game by me',
-
-  player: {
-    speed: 320,       // pixels per second
-    size: 44,
-    acceleration: 12, // higher = snappier turns
-  },
-
-  round: {
-    seconds: 30,
-    starPoints: 10,
-  },
-
-  star: {
-    size: 26,
-    count: 5,
-  },
+  // Shown on the browser tab and on the opening screen.
+  title: 'Untitled',
+  tagline: 'Your game starts here',
 };

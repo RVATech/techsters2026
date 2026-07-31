@@ -1,8 +1,11 @@
 /**
  * main.js — where the game starts up.
  *
- * It builds the pieces the game needs, hands them to every scene, and then
+ * It builds the pieces the game needs, hands them to every screen, and then
  * starts the loop that runs the game.
+ *
+ * Right now there is one screen and it isn't a game yet. As the game takes
+ * shape, add each new screen to the list below.
  */
 
 import './style.css';
@@ -15,9 +18,7 @@ import { createParticles } from './engine/particles.js';
 import { startLoop } from './engine/loop.js';
 
 import { config } from './game/config.js';
-import { titleScene } from './game/scenes/title.js';
-import { playScene } from './game/scenes/play.js';
-import { gameOverScene } from './game/scenes/gameover.js';
+import { welcomeScene } from './game/scenes/welcome.js';
 
 document.title = config.title;
 
@@ -28,7 +29,7 @@ const canvasHelper = createCanvas({
   height: config.height,
 });
 
-// Everything the scenes are allowed to use, gathered in one place.
+// Everything the screens are allowed to use, gathered in one place.
 const context = {
   canvas: canvasHelper,
   input: createInput({ canvasHelper }),
@@ -40,12 +41,10 @@ const context = {
 context.scenes = createScenes(context);
 
 // Every screen in the game, and the name used to switch to it.
-context.scenes
-  .add('title', titleScene)
-  .add('play', playScene)
-  .add('gameover', gameOverScene);
+// Add more here as they are built:  .add('play', playScene)
+context.scenes.add('welcome', welcomeScene);
 
-context.scenes.go('title');
+context.scenes.go('welcome');
 
 startLoop({
   update: (dt) => {

@@ -84,15 +84,23 @@ src/
   main.js              wires everything together and starts the loop
   style.css            the page around the game
   game/
-    config.js          tunable numbers — speeds, timings, scores
+    config.js          tunable numbers — add them as the game needs them
     theme.js           colours, fonts, sizes
     art-library.js     paths + grid settings for the bundled art packs
-    scenes/            one file per screen (title, play, gameover, ...)
+    scenes/            one file per screen — welcome.js is the only one
   engine/              reusable helpers — read these before writing your own
 public/assets/
   art/                 bundled art and sound packs (public domain)
   icons/               SVG icons, tintable to any colour
 ```
+
+**There is no starter game, on purpose.** `scenes/welcome.js` is a blank title
+card with no character, score, timer, or win condition — nothing that would
+push her game toward a genre before she has chosen one. Replace it with her
+first real screen; don't build on top of it.
+
+This means the very first thing you build is genuinely hers. Start from
+GAME-PLAN.md, not from what is already on screen.
 
 ## Engine helpers — use these instead of reinventing them
 

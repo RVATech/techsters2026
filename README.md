@@ -49,8 +49,11 @@ npm install
 npm run dev
 ```
 
-A placeholder game runs immediately: collect stars before the timer runs out.
-It exists so day one has something playable, and it's meant to be replaced.
+You'll see a blank title card. **There is deliberately no starter game** — no
+character, no score, no timer, no win condition. A working sample game would
+quietly set expectations about what a game is supposed to be, and students
+would start editing it instead of designing their own. The first thing built
+should be hers.
 
 | Command | Does |
 | --- | --- |
@@ -73,7 +76,7 @@ GAME-PLAN.md          fills in with her decisions
 docs/ART-AND-SOUND.md every art pack, icon, and sound available
 src/
   engine/             input, scenes, drawing, sound, particles, sprites, saving
-  game/               config, theme, art index, and one file per screen
+  game/               config, theme, art index, and a blank welcome screen
 public/assets/
   art/                6 public-domain art and sound packs
   icons/              23 tintable SVG icons
