@@ -5,22 +5,37 @@
  * of the code says `theme.colors.accent` instead of writing out a colour code
  * over and over.
  *
- * This starter palette is a placeholder. Replace it with the palette chosen
- * for THIS game.
+ * Palette: warm greens and golds for a cozy, sunny-garden feel.
  */
 
 export const theme = {
   colors: {
-    background: '#12101f',
-    backgroundSoft: '#1d1a30',
-    surface: '#282444',
-    ink: '#f7f5ff',
-    inkSoft: '#b7b0d6',
-    accent: '#7cf5c6',
-    accentDeep: '#2fbf95',
-    highlight: '#ffd166',
+    // The sky behind the maze.
+    background: '#eaf3df',
+    backgroundSoft: '#d6e8c6',
+    // Walkable paths through the maze — soft earth.
+    path: '#f4ead2',
+    pathShade: '#e6dab9',
+    // Hedges: the leafy walls she eats her way past.
+    hedge: '#6fae54',
+    hedgeDeep: '#4f8a3a',
+    hedgeTrunk: '#7a5a3a',
+    // Leaves that sit on the hedges and disappear when eaten.
+    leaf: '#a7d96b',
+    leafBright: '#cbf08a',
+    // The celebration heart in the middle of the maze.
+    heart: '#ff8a9b',
+    heartGlow: '#ffd9e0',
+    // Text and ink.
+    ink: '#3a3326',
+    inkSoft: '#6b6452',
+    surface: '#fffaf0',
+    // Sparks for fireworks — warm golds, pinks, and greens.
+    accent: '#ffd166',
+    accentDeep: '#f4a93f',
+    highlight: '#ff8a9b',
     danger: '#ff6b8b',
-    shadow: 'rgba(0, 0, 0, 0.35)',
+    shadow: 'rgba(40, 30, 15, 0.25)',
   },
 
   fonts: {

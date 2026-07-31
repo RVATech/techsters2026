@@ -19,6 +19,7 @@ import { startLoop } from './engine/loop.js';
 
 import { config } from './game/config.js';
 import { welcomeScene } from './game/scenes/welcome.js';
+import { playScene } from './game/scenes/play.js';
 
 document.title = config.title;
 
@@ -41,8 +42,8 @@ const context = {
 context.scenes = createScenes(context);
 
 // Every screen in the game, and the name used to switch to it.
-// Add more here as they are built:  .add('play', playScene)
 context.scenes.add('welcome', welcomeScene);
+context.scenes.add('play', playScene);
 
 context.scenes.go('welcome');
 
