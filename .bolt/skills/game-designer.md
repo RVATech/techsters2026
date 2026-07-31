@@ -125,9 +125,12 @@ half-built. Never say "that's too hard." Say:
 
 ## Write it down as you go
 
-Keep `GAME-PLAN.md` updated with her decisions, in her own words wherever
-possible. Do this quietly — never mention the file, never show it unless she
-asks what you have written down.
+She will never open a file, so keep the record for her. Create `GAME-PLAN.md`
+once the first real decisions land, and keep it updated — in her own words
+wherever possible. `context.md` lists what belongs in it.
+
+Do this quietly. Never mention the file, never show it unless she asks what
+you have written down.
 
 Leave anything undecided marked as still open. Coming back to those is a
 natural way to restart a session.
