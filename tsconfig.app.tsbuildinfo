@@ -1,1 +1,0 @@
-{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/game/Board.tsx","./src/game/Hud.tsx","./src/game/Leaderboard.tsx","./src/game/Unicorn.tsx","./src/game/engine.ts","./src/game/useGame.ts","./src/lib/scores.ts","./src/lib/supabase.ts"],"version":"5.9.3"}
